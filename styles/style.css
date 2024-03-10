@@ -1,0 +1,22 @@
+:root {
+  --darkGreen: #49852e;
+  --mediumGreen: #519839;
+  --softGreen: #82cd47;
+  --border: #367126;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--mediumGreen);
+}
+
+nav {
+  background-color: var(--darkGreen);
+  height: 40px;
+  border-bottom: 1px solid var(--border);
+}
