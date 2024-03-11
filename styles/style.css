@@ -1,0 +1,208 @@
+:root {
+  --white: #fff;
+  --darkGreen: #49852e;
+  --mediumGreen: #519839;
+  --softGreen: #82cd47;
+  --border: rgba(255, 255, 255, 0.16);
+  --black: rgba(0, 0, 0, 0.167);
+  --veryDarkGreen: #2b6012;
+  --lightBlue: rgb(21, 126, 239);
+  --darkGray: rgba(255, 255, 255, 0.2);
+}
+
+/* utility classes */
+
+.hover:hover {
+  background-color: var(--black);
+  cursor: pointer;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* end of utility classes */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--mediumGreen);
+}
+
+/* Header */
+header {
+  width: 100%;
+}
+
+nav {
+  background-color: var(--darkGreen);
+  height: 48px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 10px;
+}
+.left-nav-side {
+  display: flex;
+  align-items: center;
+}
+
+.nine-dots {
+  width: 32px;
+  height: 32px;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.nine-dots img {
+  width: 60%;
+}
+
+.trello-logo {
+  width: 90px;
+  height: 35px;
+  border-radius: 2px;
+}
+
+.trello-logo img {
+  width: 90%;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+  margin-left: 10px;
+  gap: 10px;
+}
+
+.nav-buttons > button {
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  padding: 5px 6px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  gap: 5px;
+}
+.nav-buttons button .icon {
+  padding-top: 3px;
+}
+.icon img {
+  width: 15px;
+}
+
+.nav-buttons > button:last-child {
+  background-color: var(--black);
+  padding: 8px 10px;
+  transition: 0.3s;
+}
+
+.nav-buttons > button:last-child:hover {
+  background-color: var(--veryDarkGreen);
+}
+
+.right-nav-side {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  height: 2.1rem;
+  transition: all 0.3s ease;
+  width: 12rem;
+  border-radius: 5px;
+}
+.input-container input {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 15px 30px;
+  background-color: var(--darkGray);
+  border: 1px solid hsla(0, 0%, 100%, 0.16);
+}
+.input-container:focus-within {
+  flex-grow: 2;
+}
+
+.input-container input::placeholder {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.input-container::before {
+  content: "";
+  background-image: url("/images/search-svgrepo-com.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+}
+
+.input-container input:focus {
+  outline: 2px solid var(--lightBlue);
+  background-color: #fff;
+}
+.input-container input:focus::placeholder {
+  color: #000;
+}
+.input-container:focus-within::before {
+  filter: invert(100%);
+}
+
+.notif-btn {
+  margin-left: 0.5rem;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.notif-btn img {
+  width: 24px;
+  transform: rotate(45deg);
+}
+
+.info-btn {
+  margin-top: 0.2rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.info-btn img {
+  width: 20px;
+}
+
+.account {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.account img {
+  border-radius: 100%;
+  width: 24px;
+}
+
+/* end of Header */

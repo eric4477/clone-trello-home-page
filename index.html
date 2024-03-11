@@ -4,12 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clone Trello</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="header.css" />
   </head>
   <body>
     <header>
-      <nav></nav>
+      <nav>
+        <div class="left-nav-side">
+          <div class="nine-dots hover flex-center">
+            <img src="images/dots-9-svgrepo-com.svg" alt="9-dots" />
+          </div>
+          <div class="trello-logo hover flex-center">
+            <img src="images/trello_logo.png" alt="logo" />
+          </div>
+          <div class="nav-buttons">
+            <button class="hover">
+              <span>Workspaces</span
+              ><span class="icon">
+                <img src="images/chevron-down-svgrepo-com.svg" alt="chevron"
+              /></span>
+            </button>
+            <button class="hover">
+              <span>Recent</span
+              ><span class="icon">
+                <img src="images/chevron-down-svgrepo-com.svg" alt="chevron"
+              /></span>
+            </button>
+            <button class="hover">
+              <span>Starred</span
+              ><span class="icon">
+                <img src="images/chevron-down-svgrepo-com.svg" alt="chevron"
+              /></span>
+            </button>
+            <button class="hover">
+              <span>Templates</span
+              ><span class="icon">
+                <img src="images/chevron-down-svgrepo-com.svg" alt="chevron"
+              /></span>
+            </button>
+            <button class="hover">
+              <span>Create</span>
+            </button>
+          </div>
+        </div>
+        <div class="right-nav-side">
+          <div class="input-container">
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="notif-btn hover flex-center">
+            <img
+              src="images/notifications-svgrepo-com.svg"
+              alt="notifications"
+            />
+          </div>
+          <div class="info-btn hover flex-center">
+            <img
+              src="images/question-mark-circled-svgrepo-com.svg"
+              alt="info"
+            />
+          </div>
+          <div class="account hover flex-center">
+            <img src="images/account.jpg" alt="account" />
+          </div>
+        </div>
+      </nav>
     </header>
   </body>
 </html>
