@@ -12,7 +12,8 @@
     />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
   </head>
   <body>
     <header>
@@ -76,5 +77,147 @@
         </div>
       </nav>
     </header>
+    <div class="hero">
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-title">
+            <div class="workspace-logo"><span>T</span></div>
+            <h4>Trello workspace</h4>
+          </div>
+          <div class="sidebar-icon">
+            <span class="chevron-left flex-center">
+              <img src="images/chevron-left-svgrepo-com.svg" alt="chevron"
+            /></span>
+          </div>
+        </div>
+        <div class="sidebar-main">
+          <div class="board sidebar-item hover">
+            <div class="left-logo flex-center">
+              <img class="filter" src="images/board.png" alt="board" />
+            </div>
+            <span>Board</span>
+          </div>
+          <div class="members hover sidebar-item flex-between">
+            <div class="sidebar-item-left">
+              <div class="left-logo flex-center">
+                <img src="images/member.png" alt="person" />
+              </div>
+              <span>Members</span>
+            </div>
+            <div class="members-logo">
+              <div class="right-logo flex-center">
+                <img src="images/plus.png" alt="plus" />
+              </div>
+            </div>
+          </div>
+          <div class="setting hover sidebar-item flex-between">
+            <div class="sidebar-item-left">
+              <div class="left-logo flex-center">
+                <img src="images/settings.png" alt="settings" />
+              </div>
+              <span>Settings</span>
+            </div>
+            <div class="settings-logo">
+              <div class="right-logo flex-center">
+                <img src="images/chevron-down.png" alt="chevron" />
+              </div>
+            </div>
+          </div>
+          <div class="headline">
+            <h4>Workspace views</h4>
+          </div>
+          <div class="table sidebar-item hover">
+            <div class="left-logo flex-center">
+              <img src="images/table.png" alt="table" />
+            </div>
+            <span><i>Table</i></span>
+          </div>
+          <div class="table sidebar-item hover">
+            <div class="left-logo flex-center">
+              <img src="images/calender.png" alt="calender" />
+            </div>
+            <span><i>Calender</i></span>
+          </div>
+          <div class="headline-wrapper flex-center sidebar-item flex-between">
+            <div class="headline">
+              <h4>Your boards</h4>
+            </div>
+            <div class="right-logo flex-center hover three-dots">
+              <img src="images/three-dots.png" alt="three-dots" />
+            </div>
+          </div>
+          <div class="training hover sidebar-item flex-between">
+            <div class="left-items flex-center">
+              <div class="blue"></div>
+              <span>RealLifeTrainings</span>
+            </div>
+            <div class="right-items flex-center">
+              <div class="right-logo flex-center hover three-dots">
+                <img src="images/three-dots.png" alt="three-dots" />
+              </div>
+              <div class="right-logo flex-center star">
+                <img
+                  class="unfilled"
+                  src="images/unfilled star.png"
+                  alt="chevron"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="training hover sidebar-item flex-between">
+            <div class="left-items flex-center">
+              <div class="green"></div>
+              <span>Advanced Trainings</span>
+            </div>
+            <div class="right-items flex-center">
+              <div class="right-logo flex-center hover three-dots">
+                <img src="images/three-dots.png" alt="three-dots" />
+              </div>
+              <div class="right-logo flex-center star">
+                <img
+                  class="unfilled"
+                  src="images/unfilled star.png"
+                  alt="chevron"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-footer flex-center">
+          <div class="card">
+            <div class="card-header flex-center">
+              <img src="images/request.svg" alt="workspace" />
+            </div>
+            <div class="card-main">
+              <p>
+                <b class="title block">You are a guest in this Workspace.</b> To
+                see other boards and members in this Workspace, an admin must
+                add you as a Workspace member.
+              </p>
+            </div>
+            <div class="card-footer flex-center">
+              <button>Request to join</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let filled = false;
+      const stars = document.querySelectorAll(".star");
+
+      stars.forEach((star) => {
+        star.addEventListener("click", () => {
+          const starImg = star.children[0];
+          if (!filled) {
+            starImg.setAttribute("src", "images/filled star.png");
+            filled = true;
+          } else {
+            starImg.setAttribute("src", "images/unfilled star.png");
+            filled = false;
+          }
+        });
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,181 @@
+.sidebar {
+  flex: 0 0 260px;
+  background-color: var(--darkGreen);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  border-right: 1px solid var(--border);
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50px;
+  padding: 14px 10px;
+  border-bottom: 1px solid var(--border);
+}
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sidebar-title .workspace-logo {
+  background: linear-gradient(
+    90deg,
+    rgba(254, 97, 251, 1) 27%,
+    rgba(246, 128, 252, 1) 100%
+  );
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.sidebar-header h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.sidebar-header .chevron-left {
+  width: 27px;
+  height: 27px;
+  background-color: var(--lightGreen);
+  border-radius: 2px;
+}
+.chevron-left:hover {
+  background-color: var(--black);
+}
+.chevron-left img {
+  width: 16px;
+}
+.sidebar-main {
+  margin-top: 0.5rem;
+}
+.sidebar span {
+  font-size: 14px;
+}
+.sidebar-item-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sidebar .left-logo,
+.sidebar .right-logo {
+  width: 24px;
+  height: 24px;
+}
+.left-logo img,
+.right-logo img {
+  width: 15px;
+}
+.headline {
+  margin: 15px 0;
+  margin-left: 10px;
+}
+
+.headline h4 {
+  font-size: 14px;
+}
+
+.headline-wrapper {
+  padding-left: 0;
+}
+
+.blue,
+.green {
+  width: 24px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.blue {
+  background-color: var(--lightBlue);
+}
+.green {
+  background-color: var(--veryDarkGreen);
+}
+
+.headline-title {
+  font-size: 14px;
+}
+.headline-wrapper .right-logo {
+  display: none;
+}
+.headline-wrapper:hover .right-logo {
+  display: flex;
+}
+.three-dots {
+  border-radius: 2px;
+}
+.training {
+  height: 34px;
+}
+
+.training .left-items {
+  gap: 7px;
+}
+.training .right-items {
+  gap: 5px;
+}
+.training .three-dots,
+.training .star {
+  display: none;
+}
+
+.training:hover .three-dots,
+.training:hover .star {
+  display: flex;
+}
+.training .star:hover img {
+  transform: scale(1.2);
+}
+.sidebar-footer {
+  margin-top: 20px;
+}
+
+.card {
+  width: 248px;
+  height: 190px;
+  background-color: #e9f2ff;
+  border-radius: 4px;
+}
+
+.card-header img {
+  margin-top: 10px;
+  width: 70px;
+  height: 50px;
+}
+
+.card-main {
+  padding: 8px 12px;
+}
+.card-main .title {
+  margin-bottom: 2px;
+}
+.card-main p {
+  font-size: 12px;
+  text-align: center;
+  color: black;
+}
+.card-footer button {
+  cursor: pointer;
+  border: none;
+  margin-top: 12px;
+  text-align: center;
+  padding: 8px 24px;
+  width: 95%;
+  background-color: var(--cardButton);
+  border-radius: 3px;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.card-footer button:hover {
+  background-color: var(--cardButtonHover);
+}
