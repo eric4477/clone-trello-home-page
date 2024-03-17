@@ -1,0 +1,48 @@
+@media screen and (max-width: 1280px) {
+  .nav-buttons .create {
+    display: none;
+  }
+  .nav-buttons .templates {
+    display: none;
+  }
+
+  .nav-buttons .more {
+    display: flex;
+  }
+  .nav-buttons .add-btn {
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .nav-buttons .starred {
+    display: none;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .nav-buttons .recent {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav-buttons .workspaces {
+    display: none;
+  }
+}
+@media screen and (max-width: 790px) {
+  .input-container {
+    display: none;
+  }
+  .search-btn {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .notif-btn {
+    display: none;
+  }
+  .info-btn {
+    display: none;
+  }
+}

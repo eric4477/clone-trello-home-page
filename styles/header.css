@@ -66,13 +66,29 @@ nav {
   width: 15px;
 }
 
-.nav-buttons > button:last-child {
+.nav-buttons .create {
   background-color: var(--black);
   padding: 8px 12px;
   transition: 0.3s;
 }
 
-.nav-buttons > button:last-child:hover {
+.nav-buttons .more {
+  display: none;
+}
+.nav-buttons .add-btn {
+  background-color: var(--black);
+  border-radius: 3px;
+  display: none !important;
+  padding: 10px 10px !important;
+  transition: 0.3s;
+}
+.nav-buttons .add-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+.nav-buttons .add-btn:hover,
+.nav-buttons .create:hover {
   background-color: var(--veryDarkGreen);
 }
 
@@ -144,7 +160,8 @@ nav {
   transform: rotate(45deg);
 }
 
-.info-btn {
+.info-btn,
+.search-btn {
   margin-top: 0.2rem;
   width: 32px;
   height: 32px;
@@ -153,6 +170,13 @@ nav {
 
 .info-btn img {
   width: 20px;
+}
+
+.search-btn {
+  display: none;
+}
+.search-btn img {
+  width: 18px;
 }
 
 .account {

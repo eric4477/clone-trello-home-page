@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/media.css" />
   </head>
   <body>
     <header>
@@ -26,32 +27,41 @@
             <img src="images/trello_logo.png" alt="logo" />
           </div>
           <div class="nav-buttons">
-            <button class="hover">
+            <button class="workspaces hover">
               <span>Workspaces</span
               ><span class="icon">
                 <img src="images/chevron-down-svgrepo-com.svg" alt="chevron"
               /></span>
             </button>
-            <button class="hover">
+            <button class="recent hover">
               <span>Recent</span
               ><span class="icon">
                 <img src="images/chevron-down-svgrepo-com.svg" alt="chevron"
               /></span>
             </button>
-            <button class="hover">
+            <button class="starred hover">
               <span>Starred</span
               ><span class="icon">
                 <img src="images/chevron-down-svgrepo-com.svg" alt="chevron"
               /></span>
             </button>
-            <button class="hover">
+            <button class="templates hover">
               <span>Templates</span
               ><span class="icon">
                 <img src="images/chevron-down-svgrepo-com.svg" alt="chevron"
               /></span>
             </button>
-            <button class="hover">
+            <button class="more hover">
+              <span>more</span
+              ><span class="icon">
+                <img src="images/chevron-down-svgrepo-com.svg" alt="chevron"
+              /></span>
+            </button>
+            <button class="create hover">
               <span>Create</span>
+            </button>
+            <button class="add-btn">
+              <img src="images/plus.png" alt="plus" />
             </button>
           </div>
         </div>
@@ -59,18 +69,21 @@
           <div class="input-container">
             <input type="text" placeholder="Search" />
           </div>
-          <div class="notif-btn hover flex-center">
+          <button class="search-btn hover flex-center">
+            <img class="filter" src="images/search-input.png" alt="search" />
+          </button>
+          <button class="notif-btn hover flex-center">
             <img
               src="images/notifications-svgrepo-com.svg"
               alt="notifications"
             />
-          </div>
-          <div class="info-btn hover flex-center">
+          </button>
+          <button class="info-btn hover flex-center">
             <img
               src="images/question-mark-circled-svgrepo-com.svg"
               alt="info"
             />
-          </div>
+          </button>
           <div class="account hover flex-center">
             <img src="images/account.jpg" alt="account" />
           </div>
@@ -81,7 +94,7 @@
       <div class="sidebar">
         <div class="sidebar-header">
           <div class="sidebar-title">
-            <div class="workspace-logo"><span>T</span></div>
+            <div class="workspace-logo">T</div>
             <h4>Trello workspace</h4>
           </div>
           <div class="sidebar-icon">
@@ -183,7 +196,7 @@
             </div>
           </div>
         </div>
-        <div class="sidebar-footer flex-center">
+        <div class="sidebar-footer">
           <div class="card">
             <div class="card-header flex-center">
               <img src="images/request.svg" alt="workspace" />
