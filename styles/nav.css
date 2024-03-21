@@ -179,13 +179,14 @@ nav {
   width: 18px;
 }
 
-.account {
+.account.main-account {
   width: 35px;
   height: 35px;
   border-radius: 50%;
 }
 
-.account img {
+.account.main-account img {
   border-radius: 100%;
   width: 24px;
+  object-fit: cover;
 }

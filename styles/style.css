@@ -4,13 +4,14 @@
   --mediumGreen: #519839;
   --softGreen: #82cd47;
   --lightGreen: rgba(255, 255, 255, 0.026);
-  --border: rgba(255, 255, 255, 0.475);
+  --border: rgba(222, 222, 222, 0.475);
   --black: rgba(0, 0, 0, 0.167);
   --veryDarkGreen: #2b6012;
   --lightBlue: rgb(21, 126, 239);
   --darkGray: rgba(255, 255, 255, 0.2);
   --cardButton: #0c66e4;
   --cardButtonHover: #0954bc;
+  --board: #dfe1e6;
 }
 
 /* utility classes */
@@ -55,7 +56,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: var(--mediumGreen);
+  font-family: "Roboto", sans-serif;
 }
 button {
   background: none;
@@ -66,4 +67,55 @@ button {
   display: flex;
   flex-direction: row;
   height: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: var(--mediumGreen);
+}
+
+.icon-content {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 100%;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 3px;
+  color: var(--white);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  background-color: #484848cc;
+  transition: 0.3s ease-out;
+  transition-delay: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.show-content {
+  position: relative;
+}
+
+.show-content:hover .icon-content {
+  visibility: visible;
+  opacity: 1;
+  top: 150%;
+}
+
+.icon-content .text {
+  font-size: 12px;
+}
+
+.icon-content .key {
+  width: 20px;
+  height: 20px;
+  background-color: var(--board);
+  color: #000;
+  font-weight: 300;
+  font-size: 12px;
 }

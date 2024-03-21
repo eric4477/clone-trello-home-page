@@ -1,0 +1,155 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  background-color: #0000003d;
+  border-bottom: none;
+  padding: 12px 15px;
+  padding-right: 0;
+}
+.left-main-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 12px;
+}
+.left-main-nav h1 {
+  color: var(--white);
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+.nav-item {
+  width: 32px;
+  height: 32px;
+  border-radius: 3px;
+}
+
+.left-main-nav .star {
+  margin-right: 5px;
+}
+
+.left-main-nav .star img:hover {
+  transform: scale(1.2);
+}
+.left-main-nav .star img {
+  width: 16px;
+}
+
+.left-main-nav .group {
+  margin-right: 5px;
+}
+
+.left-main-nav .group img {
+  width: 14px;
+}
+.nav-item-wrapper {
+  gap: 5px;
+  border-radius: 3px;
+  width: 87px;
+  height: 32px;
+  font-size: 14px;
+  margin-right: 5px;
+  position: relative;
+}
+
+.nav-item-wrapper img {
+  width: 20px;
+}
+
+.main-nav .board,
+.main-nav .share {
+  background-color: var(--board);
+}
+
+.main-nav .board:hover,
+.main-nav .share:hover {
+  background-color: var(--white);
+}
+
+.customize img {
+  width: 20px;
+}
+
+.right-main-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 10px;
+}
+.rocket {
+  margin-right: 5px;
+}
+.rocket img {
+  width: 18px;
+}
+.lightning {
+  margin-right: 5px;
+}
+.lightning img {
+  width: 22px;
+}
+
+.filter-wrapper img {
+  width: 20px;
+}
+.filter-wrapper {
+  color: var(--white);
+  width: 75px;
+}
+.filter-wrapper .icon-content {
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: 400;
+  gap: 7px;
+}
+.filter-wrapper:hover .icon-content {
+  top: 170%;
+}
+
+.pipeline {
+  width: 0.8px;
+  height: 16px;
+  background-color: var(--white);
+  margin-right: 7px;
+}
+.accounts {
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+}
+
+.account.first,
+.account.second {
+  z-index: 10;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.accounts .account img {
+  border-radius: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.accounts .account img:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+}
+
+.accounts .account.second {
+  margin-left: -5px;
+}
+.nav-item-wrapper.share {
+  width: 75px;
+}
+.nav-item-wrapper.share img {
+  width: 16px;
+}
+.nav-item.menu {
+  margin-right: 0;
+}
+.nav-item.menu img {
+  width: 18px;
+}

@@ -12,8 +12,9 @@
     />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/secondnav.css" />
     <link rel="stylesheet" href="styles/media.css" />
   </head>
   <body>
@@ -84,7 +85,7 @@
               alt="info"
             />
           </button>
-          <div class="account hover flex-center">
+          <div class="account main-account hover flex-center">
             <img src="images/account.jpg" alt="account" />
           </div>
         </div>
@@ -97,10 +98,14 @@
             <div class="workspace-logo">T</div>
             <h4>Trello workspace</h4>
           </div>
-          <div class="sidebar-icon">
+          <div class="sidebar-icon show-content hover">
             <span class="chevron-left flex-center">
               <img src="images/chevron-left-svgrepo-com.svg" alt="chevron"
             /></span>
+            <div class="icon-content">
+              <span class="text">Collapse sidebar</span>
+              <span class="key flex-center">[</span>
+            </div>
           </div>
         </div>
         <div class="sidebar-main">
@@ -172,7 +177,7 @@
                 <img
                   class="unfilled"
                   src="images/unfilled star.png"
-                  alt="chevron"
+                  alt="star"
                 />
               </div>
             </div>
@@ -190,7 +195,7 @@
                 <img
                   class="unfilled"
                   src="images/unfilled star.png"
-                  alt="chevron"
+                  alt="star"
                 />
               </div>
             </div>
@@ -213,6 +218,66 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="main">
+        <nav class="main-nav">
+          <div class="left-main-nav">
+            <h1>Advanced RealLife Trainings</h1>
+            <div class="nav-item flex-center hover star">
+              <img class="unfilled" src="images/unfilled star.png" alt="star" />
+            </div>
+            <div class="nav-item show-content flex-center hover group">
+              <img src="images/group-svgrepo-com.svg" alt="group" />
+              <p class="icon-content">Change visibility</p>
+            </div>
+            <div class="nav-item-wrapper show-content flex-center hover board">
+              <img src="images/audio-wave-svgrepo-com.svg" alt="audio" />
+              <span>Board</span>
+              <p class="icon-content">Board</p>
+            </div>
+            <div class="nav-item show-content flex-center hover customize">
+              <img src="images/chevron-down-svgrepo-com.svg" alt="customize" />
+              <p class="icon-content">Customize views</p>
+            </div>
+          </div>
+          <div class="right-main-nav">
+            <div class="nav-item show-content flex-center hover rocket">
+              <img src="images/rocket-filled-svgrepo-com.svg" alt="rocket" />
+              <p class="icon-content">Power-Ups</p>
+            </div>
+            <div class="nav-item show-content flex-center hover lightning">
+              <img src="images/lightning-svgrepo-com.svg" alt="lightning" />
+              <p class="icon-content">Automation</p>
+            </div>
+            <div
+              class="nav-item-wrapper show-content flex-center hover filter-wrapper"
+            >
+              <img src="images/filter-svgrepo-com.svg" alt="filter" />
+              <span>Filters</span>
+              <div class="icon-content">
+                <span class="text">Filter cards</span>
+                <span class="key flex-center">F</span>
+              </div>
+            </div>
+            <div class="pipeline"></div>
+            <div class="accounts">
+              <div class="account first flex-center">
+                <img src="images/account.jpg" alt="account" />
+              </div>
+              <div class="account second flex-center">
+                <img src="images/account2.jpg" alt="account" />
+              </div>
+            </div>
+            <div class="nav-item-wrapper show-content flex-center hover share">
+              <img src="images/share-svgrepo-com.svg" alt="share" />
+              <span>Share</span>
+              <p class="icon-content">Share board</p>
+            </div>
+            <div class="nav-item show-content flex-center hover menu">
+              <img src="images/three-dots.png" alt="menu" />
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
     <script>
