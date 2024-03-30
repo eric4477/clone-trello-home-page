@@ -24,7 +24,7 @@ nav {
 }
 
 .nine-dots img {
-  width: 55%;
+  width: 17.6px;
 }
 
 .trello-logo {
@@ -45,12 +45,9 @@ nav {
   gap: 10px;
 }
 
-.nav-buttons > button {
-  font-family: "Roboto", sans-serif;
-  background-color: transparent;
-  border: none;
+.nav-buttons button {
   font-size: 14px;
-  padding: 5px 6px;
+  padding: 7px 10px;
   color: white;
   font-weight: 500;
   cursor: pointer;

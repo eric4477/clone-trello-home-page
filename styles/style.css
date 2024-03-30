@@ -65,15 +65,25 @@ button {
 
 .hero {
   display: flex;
-  flex-direction: row;
   height: 100%;
 }
 
 .main {
-  height: 100%;
+  position: relative;
   width: 100%;
-  overflow: auto;
+  height: 100%;
   background-color: var(--mediumGreen);
+}
+
+.main-content {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  left: 0;
+  top: 55px;
+  padding: 12px 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .icon-content {
@@ -90,7 +100,7 @@ button {
   color: var(--white);
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 20;
+  z-index: 100;
   background-color: #484848cc;
   transition: 0.3s ease-out;
   transition-delay: 0.3s;
@@ -118,4 +128,35 @@ button {
   color: #000;
   font-weight: 300;
   font-size: 12px;
+}
+
+::-webkit-scrollbar,
+.scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb,
+.scrollbar-thumb {
+  background: #aaa;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover,
+.scrollbar-thumb:hover {
+  background: #888;
+}
+
+::-webkit-scrollbar-track,
+.scrollbar-track {
+  background: #f4f4f4;
+}
+
+::-webkit-scrollbar-track:hover,
+.scrollbar-track:hover {
+  background: #e0e0e0;
+}
+
+::-webkit-scrollbar-corner,
+.scrollbar-corner {
+  background: transparent;
 }

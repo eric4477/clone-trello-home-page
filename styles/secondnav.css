@@ -122,15 +122,16 @@
 
 .account.first,
 .account.second {
-  z-index: 10;
   width: 28px;
   height: 28px;
   border-radius: 50%;
 }
-.accounts .account img {
-  border-radius: 100%;
-  width: 100%;
-  object-fit: cover;
+.accounts .account.first {
+  z-index: 10;
+}
+
+.accounts .account.second {
+  margin-left: -5px;
 }
 
 .accounts .account img:hover {
@@ -138,18 +139,19 @@
   filter: brightness(110%);
 }
 
-.accounts .account.second {
-  margin-left: -5px;
+.accounts .account img {
+  border-radius: 100%;
+  width: 100%;
+  object-fit: cover;
 }
+
 .nav-item-wrapper.share {
   width: 75px;
 }
 .nav-item-wrapper.share img {
   width: 16px;
 }
-.nav-item.menu {
-  margin-right: 0;
-}
+
 .nav-item.menu img {
   width: 18px;
 }
