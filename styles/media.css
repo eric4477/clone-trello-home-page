@@ -37,6 +37,9 @@
     width: 100%;
     justify-content: flex-end;
   }
+  .main-content {
+    top: 100px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -62,6 +65,21 @@
   }
 }
 
+@media screen and (max-width: 695px) {
+  .main-content {
+    top: 130px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .left-main-nav h1 {
+    margin-bottom: 5px;
+  }
+  .main-content {
+    top: 180px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .notif-btn {
     display: none;
@@ -71,8 +89,16 @@
   }
 }
 
-/* @media screen and (max-width: 445px) {
-  .left-main-nav h1 {
-    white-space: nowrap;
+@media screen and (max-width: 455px) {
+  .main-content {
+    top: 300px;
   }
-} */
+}
+@media screen and (max-width: 425px) {
+  .main-content {
+    top: 350px;
+  }
+  .right-main-nav .accounts {
+    margin-bottom: 10px;
+  }
+}

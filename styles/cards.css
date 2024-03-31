@@ -129,16 +129,6 @@
   cursor: pointer;
 }
 
-.todo-header .edit {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-
-.todo-header .edit img {
-  width: 16px;
-  height: 16px;
-}
 .todo-content > p,
 .todo-labels > p {
   color: #172b4d;
