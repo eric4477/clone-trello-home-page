@@ -4,13 +4,9 @@ This project is a clone of the popular productivity tool Trello, built using onl
 
 ## Features
 
-- **Homepage Layout**: The project replicates the layout and structure of Trello's homepage, including the header, navigation bar, hero section, and footer.
+- **Homepage Layout**: The project replicates the layout and structure of Trello's homepage, including the header, navigation bar and hero section.
 
 - **Styling**: Custom CSS is used to style the elements and components to match the appearance of Trello's homepage as closely as possible.
-  
-## Usage
-
-To view the Trello clone, simply open the `index.html` file in a web browser. You can also host it on a web server to share it with others or access it online.
 
 ## Technologies Used
 
